@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLAZE — Premium E-Commerce</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+ 
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <!-- ===== ANIMATED ORBS ===== -->
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-fire"></i>
+                <span>BLAZE</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#products">Магазин</a></li>
+                <li><a href="#categories">Категории</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#newsletter">Предложения</a></li>
+                <!-- <li><a href="#products">Shop</a></li>  -->
+                <!-- <li><a href="#categories">Categories</a></li>  -->
+                <!-- <li><a href="#testimonials">Reviews</a></li>  -->
+                <!-- <li><a href="#newsletter">Offers</a></li>  -->
+            </ul>
+
+            <div class="header-actions">
+                <button aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="cart-toggle" aria-label="Open cart" id="cartToggle">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-bolt"></i> Новая Коллекция 2026
+                        <!-- <i class="fas fa-bolt"></i> New Collection 2026 -->
+                    </div>
+                    <h1>
+                        Зажги в себе<br />
+                        <span class="highlight">Повседневный стиль</span>
+                        <!-- Ignite Your<br /> -->
+                        <!-- <span class="highlight">Everyday Style</span> -->
+                    </h1>
+                    <p>
+                        Откройте для себя премиальные базовые вещи с дерзким характером.
+                        Качество в сочетании с дизайном — для тех, кто осмеливается.
+                        <!-- Discover premium essentials with a bold edge. Quality meets design — crafted for those who dare. -->
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn btn--primary">
+                            Изучить сейчас <i class="fas fa-arrow-right"></i>
+                            <!-- Explore Now <i class="fas fa-arrow-right"></i> -->
+                        </a>
+                        <a href="#categories" class="btn btn--ghost">
+                            <i class="fas fa-th-large"></i> Просмотр категорий
+                            <!-- <i class="fas fa-th-large"></i> Browse Categories -->
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">12K+</span>
+                            <span class="stat-label">Довольные клиенты</span>
+                            <!-- <span class="stat-label">Happy Customers</span> -->
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Уровень удовлетворенности</span>
+                            <!-- <span class="stat-label">Satisfaction Rate</span> -->
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4.9★</span>
+                            <span class="stat-label">Средний рейтинг</span>
+                            <!-- <span class="stat-label">Average Rating</span> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card-3d" id="heroCard3d">
+                        <div class="product-tag">
+                            <i class="fas fa-star" style="color:var(--accent);"></i> Бестселлер
+                            <!-- <i class="fas fa-star" style="color:var(--accent);"></i> Bestseller -->
+                        </div>
+                        <div class="product-name">Ember<br />Collection</div>
+                        <div class="product-image-wrap">
+                            <img src="./images/EmberCollection.jpg" alt="Ember Collection" loading="lazy" />
+                        </div>
+                        <div class="product-price">
+                            $129 <small>$189</small>
+                        </div>
+                        <div class="floating-badge floating-badge--1">
+                            <i class="fas fa-truck"></i> Бесплатная доставка
+                            <!-- <i class="fas fa-truck"></i> Free Shipping -->
+                        </div>
+                        <div class="floating-badge floating-badge--2">
+                            <i class="fas fa-gem"></i> Premium
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="section" id="categories">
+        <div class="container">
+            <div class="section-header reveal">
+                <div>
+                    <h2>Выбор по <span>Категории</span></h2>
+                    <p>Найдите именно то, что ищете</p>
+                    <!-- <h2>Shop by <span>Category</span></h2> -->
+                    <!-- <p>Find exactly what you're looking for</p> -->
+                </div>
+                <a href="#" class="view-all">
+                    Все категории <i class="fas fa-arrow-right"></i>
+                    <!-- All Categories <i class="fas fa-arrow-right"></i> -->
+                </a>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card reveal">
+                    <span class="icon"><i class="fas fa-tshirt"></i></span>
+                    <div class="name">Мода</div>
+                    <div class="count">124 элемента</div>
+                    <!-- <div class="name">Fashion</div> -->
+                    <!-- <div class="count">124 items</div> -->
+                </div>
+                <div class="category-card reveal">
+                    <span class="icon"><i class="fas fa-mobile-alt"></i></span>
+                    <div class="name">Электроника</div>
+                    <div class="count">86 элементов</div>
+                    <!-- <div class="name">Electronics</div> -->
+                    <!-- <div class="count">86 items</div> -->
+                </div>
+                <div class="category-card reveal">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <div class="name">Дом &amp; быт</div>
+                    <div class="count">53 элемента</div>
+                    <!-- <div class="name">Home &amp; Living</div> -->
+                    <!-- <div class="count">53 items</div> -->
+                </div>
+                <div class="category-card reveal">
+                    <span class="icon"><i class="fas fa-paint-brush"></i></span>
+                    <div class="name">Красота</div>
+                    <div class="count">41 элемент</div>
+                    <!-- <div class="name">Beauty</div> -->
+                    <!-- <div class="count">41 items</div> -->
+                </div>
+                <div class="category-card reveal">
+                    <span class="icon"><i class="fas fa-book"></i></span>
+                    <div class="name">Книги</div>
+                    <div class="count">29 элементов</div>
+                    <!-- <div class="name">Books</div> -->
+                    <!-- <div class="count">29 items</div> -->
+                </div>
+                <div class="category-card reveal">
+                    <span class="icon"><i class="fas fa-gamepad"></i></span>
+                    <div class="name">Игры</div>
+                    <div class="count">37 элементов</div>
+                    <!-- <div class="name">Gaming</div> -->
+                    <!-- <div class="count">37 items</div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="section" id="products">
+        <div class="container">
+            <div class="section-header reveal">
+                <div>
+                    <h2>Рекомендуемые <span>товары</span></h2>
+                    <p>Подобрано специально для вас</p>
+                    <!-- <h2>Featured <span>Products</span></h2> -->
+                    <!-- <p>Handpicked just for you</p> -->
+                </div>
+                <a href="#" class="view-all">
+                    Посмотреть всё<i class="fas fa-arrow-right"></i>
+                    <!-- View All <i class="fas fa-arrow-right"></i> -->
+                </a>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <div>
+                    <!-- <h2>What Our <span>Customers Say</span></h2> -->
+                    <!-- <p>Real stories from real people</p> -->
+                    <h2>Что говорят <span>наши клиенты</span></h2>
+                    <p>Реальные истории реальных людей</p>
+                </div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>
+                        “В полном восторге от качества и дизайна. 
+                        Теперь это мой основной выбор, когда нужны 
+                        качественные базовые вещи. 
+                        Доставка тоже порадовала — привезли быстро!”
+                        <!-- “Absolutely love the quality and design. My new go-to -->
+                        <!-- for premium essentials. Shipping was fast too!” -->
+                    </blockquote>
+                    <div class="author">
+                        <div class="avatar">JD</div>
+                        <div>
+                            <div class="name">Джессика Дэвис</div>
+                            <!-- <div class="name">Jessica Davis</div> -->
+                            <div class="role">Проверенный покупатель</div>
+                            <!-- <div class="role">Verified Buyer</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>
+                        “Коллекция Ember — просто потрясающая.
+                         Мне ещё никогда не делали столько
+                          комплиментов. Очень рекомендую!”
+                        <!-- “The Ember collection is stunning. I've never received -->
+                        <!-- so many compliments. Highly recommend!” -->
+                    </blockquote>
+                    <div class="author">
+                        <div class="avatar">MT</div>
+                        <div>
+                            <div class="name">Маркус Тан</div>
+                            <!-- <div class="name">Marcus Tan</div> -->
+                            <div class="role">Проверенный покупатель</div>
+                            <!-- <div class="role">Verified Buyer</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>
+                        “Потрясающее обслуживание клиентов, 
+                        а сам продукт превзошел мои ожидания.
+                         Впечатления — 10 из 10.”
+                        <!-- “Incredible customer service and the product exceeded -->
+                        <!-- my expectations. 10/10 experience.” -->
+                    </blockquote>
+                    <div class="author">
+                        <div class="avatar">SR</div>
+                        <div>
+                            <div class="name">София Ривера</div>
+                            <div class="role">Проверенный покупатель</div>
+                            <!-- <div class="name">Sophia Rivera</div> -->
+                            <!-- <div class="role">Verified Buyer</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="section" id="newsletter">
+        <div class="container">
+            <div class="newsletter reveal">
+                <h3>Будьте в 
+                <span style="background:linear-gradient(135deg,var(--primary-light),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+                курсе</span></h3>
+                <!-- <h3>Stay in the  -->
+                <!-- <span style="background:linear-gradient(135deg,var(--primary-light),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;"> -->
+                <!-- Loop</span></h3> -->
+                <p>Подпишитесь, чтобы получать доступ к эксклюзивным новинкам, ранний доступ и скидку 10% на первый заказ.</p>
+                <!-- <p>Subscribe for exclusive drops, early access, and 10% off your first order.</p> -->
+                <div class="form">
+                    <!-- <input type="email" placeholder="Enter your email" /> -->
+                    <input type="email" placeholder="Введите адрес вашей почты" />
+                    <button class="btn btn--primary">
+                        <!-- Subscribe <i class="fas fa-paper-plane"></i> -->
+                        Подписаться<i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" style="font-size:22px;">
+                        <i class="fas fa-fire"></i>
+                        <span>BLAZE</span>
+                    </a>
+                    <p>Товары первой необходимости премиум-класса для современного образа жизни.
+                         Подобраны с заботой, доставлены с любовью.</p>
+                    <!-- <p>Premium essentials for the modern lifestyle. Curated with care, delivered with love.</p> -->
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Магазин</h4>
+                    <!-- <h4>Shop</h4> -->
+                    <ul>
+                        <li><a href="#">Новые поступления</a></li>
+                        <li><a href="#">Бестселлеры</a></li>
+                        <li><a href="#">Распродажа</a></li>
+                        <li><a href="#">Подарочные карты</a></li>
+                        <!-- <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Bestsellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Gift Cards</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Поддержка</h4>
+                    <!-- <h4>Support</h4> -->
+                    <ul>
+                        <li><a href="#">Справочный центр</a></li>
+                        <li><a href="#">Возврат</a></li>
+                        <li><a href="#">Перевозки</a></li>
+                        <li><a href="#">Контакт</a></li>
+                        <!-- <li><a href="#">Help Center</a></li> -->
+                        <!-- <li><a href="#">Returns</a></li> -->
+                        <!-- <li><a href="#">Shipping</a></li> -->
+                        <!-- <li><a href="#">Contact</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <!-- <h4>Company</h4> -->
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Пресса</a></li>
+                        <li><a href="#">Устойчивое развитие</a></li>
+                        <!-- <li><a href="#">About</a></li> -->
+                        <!-- <li><a href="#">Careers</a></li> -->
+                        <!-- <li><a href="#">Press</a></li> -->
+                        <!-- <li><a href="#">Sustainability</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 BLAZE. All rights reserved.</span>
+                <a href="https://github.com/sobakastar" target="_blank" rel="noopener noreferrer">
+                    <span>Разработка (нажми):&nbsp;Гришан</span>
+                  </a>
+                
+                <span>
+                    <i class="fas fa-credit-card" style="margin-right:6px;"></i>
+                    Безопасное оформление заказа
+                    <!-- Secure Checkout -->
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== CART OVERLAY & SIDEBAR ===== -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <!-- <h3>Your Cart <span id="cartCount">(0)</span></h3> -->
+            <h3>Ваша корзина<span id="cartCount">(0)</span></h3>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-bag"></i>
+                <p>Ваша корзина пуста</p>
+                <small style="font-size:13px;">Начните добавлять потрясающие товары!</small>
+                <!-- <p>Your cart is empty</p> -->
+                <!-- <small style="font-size:13px;">Start adding some amazing products!</small> -->
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Итог&nbsp;:</span>
+                <!-- <span>Total</span> -->
+                <span class="total-price" id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn-checkout">
+                <i class="fas fa-lock"></i> Перейти к оформлению заказа
+                <!-- <i class="fas fa-lock"></i> Proceed to Checkout -->
+            </button>
+        </div>
+    </div>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast" id="toast">
+        <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="toast-msg">
+            Добавлено в корзину!
+            <small>Товар успешно добавлен</small>
+            <!-- Added to cart! -->
+            <!-- <small>Item successfully added</small> -->
+        </div>
+    </div>
+
+   
+
+</body>
+</html>
